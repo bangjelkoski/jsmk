@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s | Javascript.mk',
+    titleTemplate: 'Javascript.mk',
     htmlAttrs: { lang: 'en', class: 'w-screen h-screen' },
     bodyAttrs: { class: 'w-screen h-screen font-sans text-base m-0 bg-gray-200' },
     meta: [

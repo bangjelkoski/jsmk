@@ -7,10 +7,9 @@
 
     const episodes = [
       {
-        name: '',
-        runtime: '',
-        image: '',
-        src: ''
+        name: 'Buba Coreli - Balenciaga',
+        runtime: '2:49',
+        video_id: 'FmeVHlJOpzQ',
       }
     ]
 
