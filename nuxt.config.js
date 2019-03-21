@@ -24,12 +24,8 @@ module.exports = {
   /*
    ** Load nuxt modules
    */
-  modules: ['nuxt-purgecss'],
-  /*
-   ** PurgeCSS
-   ** https://github.com/Developmint/nuxt-purgecss
-   */
-  purgeCSS: {},
+  modules: [],
+
   /*
    ** This option is given directly to the vue-router Router constructor
    */
