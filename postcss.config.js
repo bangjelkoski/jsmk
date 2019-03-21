@@ -10,10 +10,10 @@ module.exports = {
     require('postcss-preset-env')({
       stage: 0
     }),
-    require('cssnano')({
+    /* require('cssnano')({
       preset: 'default',
       discardComments: { removeAll: true },
       zindex: false
-    })
+    }) */
   ]
 }
