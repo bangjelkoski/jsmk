@@ -1,11 +1,10 @@
 <template>
     <div class="py-16">
         <h1 class="text-gray-800 mb-6 text-2xl font-bold">Курсеви</h1>
-        <div class="-mx-4">
+        <div class="mx-0 md:-mx-4">
             <course v-for="(course, index) in courses"
                 :key="`course-${index}`"
-                :course="course"
-                :episodes="course.episodes" />
+                :course="course" />
         </div>
     </div>
 </template>

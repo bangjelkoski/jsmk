@@ -142,6 +142,7 @@ module.exports = {
       '64': '16rem'
     },
     screens: {
+      xs: '380px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

@@ -7,6 +7,8 @@
                         type="button"
                         @click="$router.replace('/')">Почетна</button>
 
+                    <span class="font-bold text-blue-500 tracking-tight hidden sm:block">Бесплатни курсеви за web devеlopment на 🇲🇰</span>
+
                     <a href="https://bangjelkoski.com"
                         target="_blank"
                         class="px-4 py-2 no-underline font-bold text-sm rounded bg-teal-500 shadow text-white outline-none border-0 cursor-pointer hover:bg-teal-600">За мене</a>
