@@ -1,26 +1,24 @@
 <template>
-    <div class="-mx-4">
-        <course v-for="(course, index) in courses"
-            :key="`course-${index}`"
-            :course="course" />
+    <div class="py-16">
+        <h1 class="text-gray-800 mb-6 text-2xl font-bold">Курсеви</h1>
+        <div class="-mx-4">
+            <course v-for="(course, index) in courses"
+                :key="`course-${index}`"
+                :course="course"
+                :episodes="course.episodes" />
+        </div>
     </div>
 </template>
 
 <script>
     import course from '~/components/course'
 
-    const courses = [
-      {
-        slug: 'es6',
-        name: 'Курс за ES6',
-        image: '/courses/es6.png'
-      }
-    ]
-
     export default {
-      data: () => ({
-        courses: [...courses]
-      }),
+      computed: {
+        courses() {
+          return this.$store.getters.courses
+        }
+      },
 
       components: {
         course
