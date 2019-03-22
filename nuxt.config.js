@@ -39,7 +39,11 @@ module.exports = {
       '/courses/javascript-basics',
       '/courses/nuxt-js',
       '/courses/vue-js-basics',
-      '/courses/vue-js-advanced'
+      '/courses/vue-js-advanced',
+      '/courses/laravel-basics',
+      '/courses/laravel-advanced',
+      '/courses/laravel-vue-forum',
+      '/courses/tailwind-css',
     ]
   },
   /*

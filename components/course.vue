@@ -12,10 +12,13 @@
                 {{ course.name }}
 
             </h2>
-            <p class="px-1 text-gray-500 text-sm mb-4 flex justify-between flex-wrap items-center">
-                <span>Број на лекции: {{ course.episodes.length || 0 }}</span>
+            <p class="px-1 text-gray-500 text-sm mb-4 flex justify-between flex-wrap items-center" v-if="course.lessons.length > 0">
+                <span>Број на лекции: {{ course.lessons.length }}</span>
                 <span class="font-bold px-2 text-xs text-white bg-red-500 rounded-lg"
-                    v-if="hasNewEpisodes">Нови Епизоди!</span>
+                    v-if="hasNewlessons">Нови Лекции!</span>
+            </p>
+            <p class="px-1 text-red-400 text-xs mb-4 font-bold" v-else>
+              Овој курс сеуште нема лекции.
             </p>
         </div>
     </div>
@@ -30,16 +33,16 @@
       },
 
       computed: {
-        hasNewEpisodes() {
+        hasNewlessons() {
           const today = moment()
 
-          const episode = this.course.episodes.find(episode => {
-            const episodeCreationTime = moment(episode.created, 'YYYY/MM/DD')
-            const diff = today.diff(episodeCreationTime, 'days')
+          const lesson = this.course.lessons.find(lesson => {
+            const lessonCreationTime = moment(lesson.created, 'YYYY/MM/DD')
+            const diff = today.diff(lessonCreationTime, 'days')
             return diff > 3
           })
 
-          return episode ? true : false
+          return lesson ? true : false
         }
       },
 

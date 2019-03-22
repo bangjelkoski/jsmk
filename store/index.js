@@ -8,7 +8,7 @@ export const state = () => {
         level: 'advanced',
         name: 'Запознавање со ES6',
         image: 'courses/es6.png',
-        episodes: require('~/episodes/es6').default
+        lessons: require('~/lessons/es6').default
       },
       {
         slug: 'javascript-basics',
@@ -17,7 +17,7 @@ export const state = () => {
         playlist: '',
         name: 'Основи на Javascript',
         image: 'courses/javascript-basics.png',
-        episodes: require('~/episodes/javascript-basics').default
+        lessons: require('~/lessons/javascript-basics').default
       },
       {
         slug: 'nuxt-js',
@@ -26,7 +26,7 @@ export const state = () => {
         tags: ['javascript', 'vue', 'nuxt', 'ssr', 'spa'],
         name: 'Nuxt.js 101',
         image: 'courses/nuxt-js.png',
-        episodes: require('~/episodes/nuxt-js').default
+        lessons: require('~/lessons/nuxt-js').default
       },
       {
         slug: 'vue-js-basics',
@@ -35,7 +35,7 @@ export const state = () => {
         tags: ['javascript', 'vue'],
         name: 'Основи на Vue.js',
         image: 'courses/vue-js-basics.png',
-        episodes: require('~/episodes/vue-js-basics').default
+        lessons: require('~/lessons/vue-js-basics').default
       },
       {
         slug: 'vue-js-advanced',
@@ -44,7 +44,7 @@ export const state = () => {
         tags: ['javascript', 'vue'],
         name: 'Vue.js - напредно ниво',
         image: 'courses/vue-js-advanced.png',
-        episodes: require('~/episodes/vue-js-advanced').default
+        lessons: require('~/lessons/vue-js-advanced').default
       },
       {
         slug: 'laravel-basics',
@@ -53,7 +53,7 @@ export const state = () => {
         tags: ['php', 'laravel'],
         name: 'Основи на Laravel',
         image: 'courses/laravel-basics.png',
-        episodes: require('~/episodes/laravel-basics').default
+        lessons: require('~/lessons/laravel-basics').default
       },
       {
         slug: 'laravel-advanced',
@@ -62,7 +62,7 @@ export const state = () => {
         tags: ['php', 'laravel'],
         name: 'Laravel - напредно ниво',
         image: 'courses/laravel-advanced.png',
-        episodes: require('~/episodes/laravel-advanced').default
+        lessons: require('~/lessons/laravel-advanced').default
       },
       {
         slug: 'tailwind-css',
@@ -71,7 +71,7 @@ export const state = () => {
         tags: ['css', 'tailwind'],
         name: 'Запознавање со Tailwind CSS',
         image: 'courses/tailwind.png',
-        episodes: require('~/episodes/tailwind-css').default
+        lessons: require('~/lessons/tailwind-css').default
       },
       {
         slug: 'laravel-vue-forum',
@@ -80,7 +80,7 @@ export const state = () => {
         tags: ['php', 'laravel'],
         name: 'Изградба на форум со Laravel и Vue',
         image: 'courses/laravel-vue-forum.png',
-        episodes: require('~/episodes/laravel-vue-forum').default
+        lessons: require('~/lessons/laravel-vue-forum').default
       }
     ]
   }
