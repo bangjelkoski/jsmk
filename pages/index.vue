@@ -13,6 +13,12 @@
     import course from '~/components/course'
 
     export default {
+      head() {
+        return {
+          title: 'Почетна'
+        }
+      },
+
       computed: {
         courses() {
           return this.$store.getters.courses

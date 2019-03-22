@@ -1,6 +1,6 @@
 <template>
     <div class="py-16">
-        <h1 class="text-gray-800 mb-6 text-2xl font-bold">Курс - {{ course.name }}</h1>
+        <h1 class="text-gray-800 mb-6 text-2xl font-bold">{{ course.name }} | Плејлиста - {{ course.playlist }}</h1>
 
         <div class="row">
             <episode v-for="(episode, index) in episodes"
@@ -8,10 +8,11 @@
                 :episode="episode"
                 @removed="current = null"
                 @selected="selected(episode)" />
-
-            <yt-video v-if="current"
-                :video="current.video_id"></yt-video>
         </div>
+
+        <yt-video v-if="current"
+            :video="current.video"></yt-video>
+
     </div>
 </template>
 
@@ -22,6 +23,12 @@
     import { mapGetters } from 'vuex'
 
     export default {
+      head() {
+        return {
+          title: this.course.name
+        }
+      },
+
       data: () => ({
         current: null
       }),

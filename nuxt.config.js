@@ -3,8 +3,8 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: 'Javascript.mk',
-    htmlAttrs: { lang: 'en', class: 'w-screen h-screen' },
+    titleTemplate: '%s | JavaScript.mk',
+    htmlAttrs: { lang: 'mk', class: 'w-screen h-screen' },
     bodyAttrs: { class: 'w-screen h-screen font-sans text-base m-0 bg-gray-200' },
     meta: [
       { charset: 'utf-8' },
@@ -32,6 +32,15 @@ module.exports = {
   router: {
     base: '',
     linkActiveClass: 'is-active'
+  },
+  generate: {
+    routes: [
+      '/courses/es6',
+      '/courses/javascript-basics',
+      '/courses/nuxt-js',
+      '/courses/vue-js-basics',
+      '/courses/vue-js-advanced'
+    ]
   },
   /*
    ** Customize the progress bar color

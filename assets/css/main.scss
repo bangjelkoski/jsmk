@@ -6,6 +6,10 @@ html, body {
   @apply h-screen w-screen;
 }
 
+button:focus {
+  @apply outline-none;
+}
+
 .row {
   @apply flex flex-wrap -mx-2;
   .col {
