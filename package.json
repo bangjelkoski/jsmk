@@ -13,8 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "node-sass": "^4.11.0",
     "nuxt": "^2.4.3",
     "nuxt-purgecss": "^0.2.1",
+    "sass-loader": "^7.1.0",
     "tailwindcss": "^1.0.0-beta.3"
   },
   "devDependencies": {

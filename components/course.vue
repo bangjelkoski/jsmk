@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4 cursor-pointer"
+    <div class="col"
         @click="goToCourse">
         <div class="bg-white rounded shadow p-2">
             <div class="w-full h-48 rounded mb-4">

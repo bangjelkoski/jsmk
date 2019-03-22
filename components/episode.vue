@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4 cursor-pointer" @click="select">
-        <div class=" bg-white rounded shadow p-2">
+    <div class="col" @click="select">
+        <div class="bg-white rounded shadow p-2">
             <div class="w-full h-48 rounded mb-4">
                 <img :src="`https://img.youtube.com/vi/${episode.video_id}/0.jpg`"
                     :alt="episode.name"

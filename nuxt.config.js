@@ -20,7 +20,7 @@ module.exports = {
   /*
    ** Load global CSS
    */
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.scss'],
   /*
    ** Load nuxt modules
    */

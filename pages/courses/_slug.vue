@@ -2,7 +2,7 @@
     <div class="py-16">
         <h1 class="text-gray-800 mb-6 text-2xl font-bold">Курс - {{ course.name }}</h1>
 
-        <div class="mx-0 md:-mx-4">
+        <div class="row">
             <episode v-for="(episode, index) in episodes"
                 :key="`episode-${index}`"
                 :episode="episode"
