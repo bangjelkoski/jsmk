@@ -24,7 +24,12 @@ module.exports = {
   /*
    ** Load nuxt modules
    */
-  modules: [],
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-127706672-2',
+      dev: false
+    }]
+  ],
 
   /*
    ** This option is given directly to the vue-router Router constructor

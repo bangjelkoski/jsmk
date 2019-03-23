@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.2.0",
     "cyrillic-to-latin": "^2.0.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
