@@ -1,0 +1,108 @@
+.valid {
+  .input {
+    @apply border-green-500;
+  }
+
+  .has-addon {
+    .addon {
+      @apply text-green-500;
+    }
+  }
+}
+
+.invalid {
+  .input {
+    @apply border-red-500;
+  }
+
+  .has-addon {
+    .addon {
+      @apply text-red-500;
+    }
+  }
+}
+
+.has-addon {
+  .input {
+    @apply pr-8;
+  }
+
+  .addon {
+    @apply absolute right-0 top-0 mt-2 mr-2 inline-block text-gray-700 cursor-pointer select-none;
+    .icon {
+      @apply w-6 h-6;
+    }
+  }
+}
+
+select.input {
+  @apply appearance-none pr-8;
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: center right 0.75rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="%2335393C" fill-rule="nonzero" d="M8.293.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4A1 1 0 0 1 1.707.293L5 3.586 8.293.293z"/></svg>');
+}
+
+.input {
+  @apply shadow w-full rounded bg-white border pl-3 w-full h-10 text-gray-700 outline-none;
+
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus {
+    @apply border-blue-500;
+  }
+
+  &::placeholder {
+    @apply opacity-25 text-sm;
+  }
+}
+
+.checkbox {
+  @apply absolute opacity-0;
+
+  & + label {
+    @apply cursor-pointer p-0 relative text-sm text-gray-700 select-none;
+  }
+
+  // Box.
+  & + label:before {
+    content: '';
+    @apply mr-1 inline-block align-text-top w-5 h-5 bg-white shadow rounded border;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    @apply bg-blue-200;
+  }
+
+  // Box checked
+  &:checked + label:before {
+    @apply bg-blue-500;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    @apply cursor-not-allowed text-gray-200;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    @apply shadow-none bg-gray-300;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: '';
+    @apply absolute bg-white;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}

@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "cyrillic-to-latin": "^2.0.0",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.3",

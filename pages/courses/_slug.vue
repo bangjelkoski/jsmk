@@ -1,6 +1,7 @@
 <template>
     <div class="py-16">
-        <h1 class="text-gray-800 mb-6 text-2xl font-bold">{{ course.name }} | <span class="text-sm"> <a :href="`https://www.youtube.com/playlist?list=${course.playlist}`"
+        <h1 class="text-gray-800 mb-6 text-2xl font-bold">{{ course.name }} | <span class="text-sm"
+                v-if="course.playlist"> <a :href="`https://www.youtube.com/playlist?list=${course.playlist}`"
                     class="text-blue-500"
                     target="_blank">Плејлиста на youtube</a></span></h1>
 

@@ -16,7 +16,7 @@ export const state = () => {
         level: 'basic',
         playlist: '',
         name: 'Основи на Javascript',
-        image: 'courses/javascript-basics.png',
+        image: 'courses/javascript-basics.jpg',
         lessons: require('~/lessons/javascript-basics').default
       },
       {
@@ -25,7 +25,7 @@ export const state = () => {
         playlist: '',
         tags: ['javascript', 'vue', 'nuxt', 'ssr', 'spa'],
         name: 'Nuxt.js 101',
-        image: 'courses/nuxt-js.png',
+        image: 'courses/nuxt.jpg',
         lessons: require('~/lessons/nuxt-js').default
       },
       {
@@ -34,7 +34,7 @@ export const state = () => {
         playlist: '',
         tags: ['javascript', 'vue'],
         name: 'Основи на Vue.js',
-        image: 'courses/vue-js-basics.png',
+        image: 'courses/vue-basics.jpeg',
         lessons: require('~/lessons/vue-js-basics').default
       },
       {
@@ -43,7 +43,7 @@ export const state = () => {
         playlist: '',
         tags: ['javascript', 'vue'],
         name: 'Vue.js - напредно ниво',
-        image: 'courses/vue-js-advanced.png',
+        image: 'courses/vue-advanced.jpg',
         lessons: require('~/lessons/vue-js-advanced').default
       },
       {
@@ -61,7 +61,7 @@ export const state = () => {
         playlist: '',
         tags: ['php', 'laravel'],
         name: 'Laravel - напредно ниво',
-        image: 'courses/laravel-advanced.png',
+        image: 'courses/laravel-advanced.jpg',
         lessons: require('~/lessons/laravel-advanced').default
       },
       {
