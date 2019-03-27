@@ -51,7 +51,7 @@
       data: () => ({
         search: '',
         level: '',
-        hasLessons: false
+        hasLessons: true
       }),
 
       computed: {

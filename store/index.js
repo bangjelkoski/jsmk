@@ -3,7 +3,7 @@ export const state = () => {
     courses: [
       {
         slug: 'es6',
-        playlist: '',
+        playlist: 'PL7ld9GQky3Rku6S6pwwXVt2L56AhM4DOw',
         tags: ['javascript', 'es6'],
         level: 'advanced',
         name: 'Запознавање со ES6',

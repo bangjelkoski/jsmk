@@ -1,8 +1,9 @@
 export default [
   {
-    name: 'Ime',
-    runtime: '5:44',
-    video: 'c2PGgkCIjEA',
-    created: '2019-03-12'
+    position: 2,
+    name: 'ES6 - Променливи (var, let, const)',
+    runtime: '17:01',
+    video: 'mMZQWClnnuE',
+    created: '2019-03-27'
   }
 ]
